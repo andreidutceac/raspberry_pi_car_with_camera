@@ -1,0 +1,36 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="video-feed">
+            <h3><img src="{{ url_for('video_feed') }}" width="50%"></h3>
+        </div>
+        <div class="controls">
+            <button class="control-button" data-direction="forward">Forward</button>
+            <button class="control-button" data-direction="backward">Backward</button>
+            <button class="control-button" data-direction="left">Left</button>
+            <button class="control-button" data-direction="right">Right</button>
+            <button class="control-button" data-direction="stop">Stop</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".control-button").click(function() {
+                var direction = $(this).data("direction");
+                $.ajax({
+                    type: "POST",
+                    url: "/control",
+                    data: { direction: direction },
+                });
+            });
+        });
+    </script>
+</body>
+</html>

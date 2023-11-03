@@ -2,10 +2,6 @@
 DIY project with a raspberry pi car and camera controlled from server.
 This project involves the creation of a Raspberry Pi-controlled car with integrated Pi Camera capabilities, all controllable through a web-based interface. By blending hardware components with software development, this project offers a practical, hands-on exploration of IoT, robotics, and web development concepts. It's a fun and educational endeavor that enables users to remotely control the car and capture real-time images or video from the onboard camera, all within an accessible web interface.
 
-# Step 1: Set up Raspberry Pi
-
-Install Raspbian OS on your Raspberry Pi and ensure it's connected to the Wi-Fi network.
-Update the OS and install necessary packages:
 
 # Step 1: Set up Raspberry Pi
 

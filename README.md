@@ -1,5 +1,6 @@
 # raspberry_pi_car_with_camera
-DIY project with a raspberry pi car and camera controlled from server
+DIY project with a raspberry pi car and camera controlled from server.
+This project involves the creation of a Raspberry Pi-controlled car with integrated Pi Camera capabilities, all controllable through a web-based interface. By blending hardware components with software development, this project offers a practical, hands-on exploration of IoT, robotics, and web development concepts. It's a fun and educational endeavor that enables users to remotely control the car and capture real-time images or video from the onboard camera, all within an accessible web interface.
 
 # Step 1: Set up Raspberry Pi
 
@@ -45,6 +46,9 @@ Use the Picamera library to capture images or video. You can add routes to your 
 Run your Flask application on the Raspberry Pi:
 ![Capture](https://github.com/andreidutceac/raspberry_pi_car_with_camera/assets/117718437/e60479dd-ba1e-4ddc-94cf-049e062d4bd7)
 
+Access the web interface from a browser on another device by entering the Raspberry Pi's IP address and port.
+# Step 7: Drive the Car
 
-
+Use the web interface to control the car's movements and view the camera feed.
+![Capture2](https://github.com/andreidutceac/raspberry_pi_car_with_camera/assets/117718437/5111bb28-ef6d-459d-a8e1-5b72b581c7d8)
 
